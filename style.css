@@ -2,6 +2,7 @@ body
 {
     margin: 0%;
 }
+
 .boton{
     display:inline; 
     vertical-align: middle;
@@ -10,8 +11,8 @@ body
 .nombre{
     float: left;
     width:20%;
-
 }
+
 #links{
     width: 40%;
     float: right;
@@ -21,11 +22,10 @@ body
     overflow: hidden;
     display: none;
 }
+
 .hamburger i {
     display: none;
 }
-
-
 
 h3{
     margin: 0%;
@@ -38,14 +38,9 @@ h3{
     text-decoration: none;
     padding: 1%;
     word-wrap: none;
-
-
-
-
 }
 
 li.boton a{
-    
     text-decoration: none;
     padding: 3% 6% 3% 6%;
     color: whitesmoke;
@@ -55,7 +50,6 @@ li.boton a{
 
 a:hover{
     background-color: black;
-    
 }
 
 ul{
@@ -65,9 +59,12 @@ ul{
     margin: 0%;
     overflow:hidden;
     width: 100%;
-    
-    
-    
+}
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 /*Parte para mobile*/
@@ -88,14 +85,12 @@ ul{
     }
 
     .hamburger{
-     
         display:block;
     }
     
     ul.navbar li.boton{
         overflow: hidden;
         width: 100%;
-       
         text-align: center;
     
     }
@@ -104,7 +99,6 @@ ul{
         width: 100%;
     }
     ul.navbar li.boton{
-        
         float: none;
         width: 100%;
 
@@ -114,7 +108,5 @@ ul{
         text-align: center;
     }
 
-    
-       
 }
 
