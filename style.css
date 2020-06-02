@@ -2,38 +2,29 @@ body
 {
     margin: 0%;
 }
-li{
+.boton{
     display:inline; 
     vertical-align: middle;
 }
 
-li:first-child{
+.nombre{
     float: left;
     width:20%;
 
 }
-
-
-@media only screen and (max-width: 700px) {
-    ul.navbar li.nombre {
-        float: none;
-        text-align: center;
-    }
-    ul.navbar li.boton{
-        width: 100%;
-        display: block;
-        text-align: center;
-    
-    }
-    ul.navbar li a{
-        float: none;
-        width: 100%;
-        
-    }
-
-    
-       
+#links{
+    width: 40%;
+    float: right;
 }
+
+.hamburger{
+    overflow: hidden;
+    display: none;
+}
+.hamburger i {
+    display: none;
+}
+
 
 
 h3{
@@ -53,16 +44,18 @@ h3{
 
 }
 
-a{
+li.boton a{
     
     text-decoration: none;
-    padding: 1% 3% 1% 3%;
+    padding: 3% 6% 3% 6%;
     color: whitesmoke;
     float: right;
     width: inherit;
 }
+
 a:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    
 }
 
 ul{
@@ -76,3 +69,52 @@ ul{
     
     
 }
+
+/*Parte para mobile*/
+@media only screen and (max-width: 760px) {
+    ul.navbar li.nombre {
+        float: none;
+        width: 50%;
+    }
+    .hamburger i {
+        position: absolute;
+        display: block;
+        right: -29%;
+        top: 5px;
+        width: 40%;
+        color: whitesmoke;
+        font-size: 20;
+        
+    }
+
+    .hamburger{
+     
+        display:block;
+    }
+    
+    ul.navbar li.boton{
+        overflow: hidden;
+        width: 100%;
+       
+        text-align: center;
+    
+    }
+    #links{
+        display:none;
+        width: 100%;
+    }
+    ul.navbar li.boton{
+        
+        float: none;
+        width: 100%;
+
+    }
+
+    .presentacion{
+        text-align: center;
+    }
+
+    
+       
+}
+
