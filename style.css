@@ -67,6 +67,37 @@ ul{
     top: 0;
 }
 
+.presentacion{
+    text-align: center;
+    background-color:lightcyan;
+
+
+}
+#proyectos{
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-rows: auto;
+    background-color: rgb(255, 251, 251);
+    grid-gap: 5px;
+}
+
+.proyecto1{
+   grid-column-start:2;
+   grid-column-end: 3;
+   grid-row-start: auto;
+   grid-row-end: auto;
+   background-color: rgb(218, 216, 216);
+   
+}
+.proyecto2{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    background-color: rgb(177, 177, 177);
+    
+ }
+
 /*Parte para mobile*/
 @media only screen and (max-width: 760px) {
     ul.navbar li.nombre {
@@ -104,9 +135,7 @@ ul{
 
     }
 
-    .presentacion{
-        text-align: center;
-    }
+
 
 }
 
