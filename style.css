@@ -103,7 +103,7 @@ ul{
     grid-template-columns: auto auto;
     background-color:grey;
     column-gap: 2%;
-    border-radius: 3%;
+  
 }
 
 #proyectos li div img{
