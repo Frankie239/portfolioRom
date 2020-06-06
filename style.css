@@ -48,6 +48,11 @@ li.boton a{
     width: inherit;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 a:hover{
     background-color: black;
 }
@@ -76,10 +81,35 @@ ul{
 
 #proyectos{
     display: grid;
-    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-columns: 2fr 70% 2fr;
     grid-template-rows: auto;
     background-color: rgb(255, 251, 251);
     grid-gap: 5px;
+    margin-top: 1%;
+}
+
+#proyectos li div{
+    display: grid;
+    grid-template-rows:25% 25% 25% 25%;
+    grid-template-columns: auto auto;
+    background-color:grey;
+    column-gap: 2%;
+    border-radius: 3%;
+}
+
+#proyectos li div img{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+}
+
+#proyectos li div h2{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .proyecto1{
@@ -90,6 +120,19 @@ ul{
    background-color: rgb(218, 216, 216);
    
 }
+#dashboard{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+#dashboard i {
+    font-size: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+}
+
+/*
 .proyecto2{
     grid-column-start:3;
     grid-column-end: 4;
@@ -98,7 +141,7 @@ ul{
     background-color: rgb(177, 177, 177);
     
 }
-
+*/
 /*Parte para mobile*/
 @media only screen and (max-width: 760px) {
     ul.navbar li.nombre {
@@ -137,6 +180,7 @@ ul{
     }
 
     #proyectos{
+        margin-top: 2%;
         display: grid;
         grid-template-columns: 2fr 5fr 2fr;
         grid-template-rows: auto;
