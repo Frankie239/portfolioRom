@@ -6,11 +6,14 @@ body
 .boton{
     display:inline; 
     vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .nombre{
     float: left;
     width:20%;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #links{
@@ -74,6 +77,12 @@ ul{
 
 }
 
+.title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+}
+
 #proyectos{
     display: grid;
     grid-template-columns: 2fr 5fr 5fr 2fr;
@@ -83,12 +92,11 @@ ul{
 }
 
 .proyecto1{
-   grid-column-start:2;
-   grid-column-end: 3;
-   grid-row-start: auto;
-   grid-row-end: auto;
-   background-color: rgb(218, 216, 216);
-   
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    background-color: rgb(218, 216, 216);
 }
 .proyecto2{
     grid-column-start:3;
