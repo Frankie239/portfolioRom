@@ -139,8 +139,7 @@ ul{
 
 #proyectos li div div{
     display: block;
-    width: 300px;
-    height: 200px;
+
 }
 
 #proyectos li div h2{
@@ -239,11 +238,16 @@ ul{
     }
 
     #proyectos li div div {
-        display: block;
+       
         grid-column-start: 1;
-        grid-column-end: 1;
+        grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 4;
+        
+    }
+    #proyectos li div div img{
+        width: 100%;
+        height: 100%;
     }
    
 
