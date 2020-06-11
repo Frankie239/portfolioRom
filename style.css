@@ -124,7 +124,7 @@ ul{
 
 #proyectos li div{
     display: grid;
-    grid-template-rows:25% 25% 25% 25%;
+    grid-template-rows:20% 20% 20% 20% 20%;
     grid-template-columns: auto auto;
     background-color: var(--palette3);
     column-gap: 2%;
@@ -140,6 +140,8 @@ ul{
 
 #proyectos li div div{
     display: block;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
 }
 
@@ -153,6 +155,18 @@ ul{
     grid-row-start: auto;
     grid-row-end: auto;
     grid-column-end: 3;
+}
+
+#mainP{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column:2;
+    font-size: 14px;
+}
+.proyecto1 a{
+    grid-column: 2;
+    grid-row: 5;
+    align-self: end;
 }
 #dashboard{
     text-align: center;
@@ -181,16 +195,6 @@ ul{
     
 }
 
-/*
-.proyecto2{
-    grid-column-start:3;
-    grid-column-end: 4;
-    grid-row-start: auto;
-    grid-row-end: auto;
-    background-color: rgb(177, 177, 177);
-    
-}
-*/
 
 
 /*Parte para mobile*/
@@ -203,11 +207,10 @@ ul{
         position: fixed;
         display: block;
         top: 24px;
-        /* width: 40%; */
+    
         color: whitesmoke;
         font-size: 24;
-        /* margin: 10%; */
-        /* float: left; */
+       
         right: 6%;
     }
     .hamburger{
@@ -230,21 +233,29 @@ ul{
 
     }
 
+    li.boton a{
+        text-decoration: none;
+        padding: 3% 2% 3% 6%;
+    }
     #proyectos li div{
         margin-top: 2%;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 25% 25% 25%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
         background-color:var(--palette3);
         grid-gap: 5px;
+    }
+    #mainP{
+        grid-row:4;
+        grid-column: 1;
     }
 
     #proyectos li div div {
        
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 1;
         
     }
     #proyectos li div div img{
@@ -257,7 +268,15 @@ ul{
         grid-column-start: 1;
         grid-column-end: 1;
     }
+    #proyectos li div p{
+        grid-column: 1;
+    }
+    #proyectos li div a{
+        grid-column: 1;
+        grid-row:5;
+    }
   
+
 
    
 
