@@ -124,8 +124,8 @@ ul{
 
 #proyectos li div{
     display: grid;
-    grid-template-rows:20% 20% 20% 20% 20%;
-    grid-template-columns: auto auto;
+    grid-template-rows:20% 20% 20% auto 20%;
+    grid-template-columns: 300px auto;
     background-color: var(--palette3);
     column-gap: 2%;
     grid-column-start: 1;
