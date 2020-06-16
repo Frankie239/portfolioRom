@@ -1,18 +1,20 @@
 :root{
     --navBarColor:rgb(41, 39, 39);
     --navBarHover:black;
-    --palette1:#110d3e;
+    --palette1:#0c052e;
     --palette2:#7b3359;
-    --palette3:#a06a73;
-    --palette4:#b4195f;
+    --palette3:#180c3e;
+    --palette4:#e852e1;;
     --palette5:#fefefe;
+    --palette6:#07021d;
+    
 }
 
 body
 {
     margin: 0%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:var(--palette5);
+    background-color:var(--palette6);
     width: 100vw;
 }
 body p{
@@ -71,6 +73,7 @@ li.boton a{
 a
 {
     text-decoration: none;
+    color:var(--palette4);
 }
 
 a:hover{
@@ -105,6 +108,7 @@ ul{
     align-items: center;
     display:flex;
     flex-direction: column;
+    color:white;
 }
 
 .title p{
@@ -117,7 +121,7 @@ ul{
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: auto;
-    background-color: rgb(255, 251, 251);
+    background-color:var(--palette6);
     grid-gap: 5px;
     margin-top: 1%;
 }
@@ -133,7 +137,7 @@ ul{
     
     grid-row-start: 2;
     grid-row-end: 5;
- 
+    color:white;
     
   
 }
